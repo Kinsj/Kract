@@ -10,7 +10,7 @@ import Didact from './lib/didact';
 /** @jsx Didact.createElement */
 const element = (
   <div id="foo">
-    <a>bar</a>
+    <a onClick={() => console.log(123)}>bar</a>
     <b/>
   </div>
 );
