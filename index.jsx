@@ -1,13 +1,13 @@
-import Didact from './lib/didact';
+import Kract from './lib/kract';
 
-// const element = Didact.createElement(
+// const element = Kract.createElement(
 //   'div',
 //   {id: 'foo'},
-//   Didact.createElement('a', null, 'bar'),
-//   Didact.createElement('b')
+//   Kract.createElement('a', null, 'bar'),
+//   Kract.createElement('b')
 // );
 
-/** @jsx Didact.createElement */
+/** @jsx Kract.createElement */
 const Election = () => {
   return (
     <div id="foo">
@@ -18,7 +18,7 @@ const Election = () => {
 };
 
 const Counter = () => {
-  const [n, setN] = Didact.useState(0);
+  const [n, setN] = Kract.useState(0);
 
   return (
     <div>
@@ -43,4 +43,4 @@ const App = props => {
 };
 
 
-Didact.render(<App name="kin"/>, document.querySelector('#root'));
+Kract.render(<App name="kin"/>, document.querySelector('#root'));
