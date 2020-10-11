@@ -14,7 +14,21 @@ const Election = () => {
       <a onClick={() => console.log(123)}>bar</a>
       <b/>
     </div>
-  )
+  );
+};
+
+const Counter = () => {
+  const [n, setN] = Didact.useState(0);
+
+  return (
+    <div>
+      <button onClick={() => {
+        setN(n => n+1)
+      }}>+1
+      </button>
+      {n}
+    </div>
+  );
 };
 
 const App = props => {
@@ -22,6 +36,7 @@ const App = props => {
     <div>
       <h1>hi {props.name}</h1>
       <Election/>
+      <Counter/>
     </div>
 
   );
