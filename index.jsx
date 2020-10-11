@@ -8,11 +8,24 @@ import Didact from './lib/didact';
 // );
 
 /** @jsx Didact.createElement */
-const element = (
-  <div id="foo">
-    <a onClick={() => console.log(123)}>bar</a>
-    <b/>
-  </div>
-);
+const Election = () => {
+  return (
+    <div id="foo">
+      <a onClick={() => console.log(123)}>bar</a>
+      <b/>
+    </div>
+  )
+};
 
-Didact.render(element, document.querySelector('#root'));
+const App = props => {
+  return (
+    <div>
+      <h1>hi {props.name}</h1>
+      <Election/>
+    </div>
+
+  );
+};
+
+
+Didact.render(<App name="kin"/>, document.querySelector('#root'));
