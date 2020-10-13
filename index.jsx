@@ -23,7 +23,7 @@ const Counter = () => {
   return (
     <div>
       <button onClick={() => {
-        setN(n => n+1)
+        setN(n+1)
       }}>+1
       </button>
       {n}
@@ -38,7 +38,6 @@ const App = props => {
       <Election/>
       <Counter/>
     </div>
-
   );
 };
 
